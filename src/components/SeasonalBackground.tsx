@@ -43,13 +43,14 @@ const SeasonalBackground = () => {
           key={season.name}
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out bg-cover bg-center bg-no-repeat ${
             currentSeason === index ? 'opacity-100' : 'opacity-0'
-          }`}
+          } dark:brightness-50`}
           style={{
             backgroundImage: `url(${season.image})`,
           }}
           onLoad={() => setLoading(false)}
         />
       ))}
+      <div className="absolute inset-0 bg-black/10 dark:bg-black/40" />
     </div>
   );
 };
