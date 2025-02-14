@@ -7,21 +7,21 @@ const seasons = [
     image: 'https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?q=80&w=2070&auto=format&fit=crop',
     next: 'spring'
   },
-  {
-    name: 'spring',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2070&auto=format&fit=crop',
-    next: 'summer'
-  },
-  {
-    name: 'summer',
-    image: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=2070&auto=format&fit=crop',
-    next: 'autumn'
-  },
-  {
-    name: 'autumn',
-    image: 'https://images.unsplash.com/photo-1507371341162-763b5e419408?q=80&w=2070&auto=format&fit=crop',
-    next: 'winter'
-  }
+  // {
+  //   name: 'spring',
+  //   image: 'https://images.unsplash.com/photo-1739437455408-66aab68b5c0d?q=80&w=2070&auto=format&fit=crop',
+  //   next: 'winter'
+  // },
+  // {
+  //   name: 'summer',
+  //   image: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=2070&auto=format&fit=crop',
+  //   next: 'autumn'
+  // },
+  // {
+  //   name: 'autumn',
+  //   image: 'https://images.unsplash.com/photo-1507371341162-763b5e419408?q=80&w=2070&auto=format&fit=crop',
+  //   next: 'winter'
+  // }
 ];
 
 const SeasonalBackground = () => {

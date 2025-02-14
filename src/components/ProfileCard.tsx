@@ -69,29 +69,34 @@ const ProfileCard = () => {
         </button>
 
         {/* Profile Image */}
-        <div className="w-32 h-32 overflow-hidden transform transition-all duration-300 hover:scale-105">
+        <div className="w-44 h-44 overflow-hidden transform transition-all duration-300 hover:scale-105">
           <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop"
+            src="./profile.jpg"
             alt="Profile"
             className="profile-image w-full h-full object-cover"
           />
         </div>
 
         {/* Name */}
-        <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">John Doe</h1>
+        <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">Juan Vargas</h1>
 
         {/* Bio */}
-        <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-          Passionate developer crafting beautiful web experiences. Focused on creating intuitive and elegant solutions that make a difference.
-        </p>
-
+        <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
+          Hey, I'm a Mechatronic Engineer with a passion for building elegant, high-performance applications.  
+          <br /><br />
+          I have experience in <strong>backend development</strong>, <strong>cloud solutions</strong>, and <strong>infrastructure</strong>, but I also have extensive experience in <strong>mobile</strong> and <strong>web applications</strong>.  
+          I enjoy experimenting with new technologies, optimizing workflows, and pushing the boundaries of what’s possible with technology.  
+          <br /><br />
+          Outside of coding, I’m an FPV drone enthusiast, constantly designing, tweaking, and flying custom-built drones.  
+          I also love outdoor activities like climbing, running, and hiking. During winter, you'll find me skiing or doing indoor bouldering.  
+        </p>        
         {/* Social Links */}
         <div className="flex space-x-6 pt-4">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/jp-vargasm/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon text-gray-600 dark:text-gray-300"
@@ -107,7 +112,7 @@ const ProfileCard = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/jpvargasdev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon text-gray-600 dark:text-gray-300"
@@ -123,7 +128,7 @@ const ProfileCard = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  href="https://twitter.com"
+                  href="https://www.twitter.com/juapavama"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon text-gray-600 dark:text-gray-300"
@@ -139,7 +144,7 @@ const ProfileCard = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/juapavama"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon text-gray-600 dark:text-gray-300"
