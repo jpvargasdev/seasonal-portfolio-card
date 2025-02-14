@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(({ mode }) => ({
-  base: "/seasonal-portfolio-card/", // 👈 Set this to match your GitHub repo name
+  base: "/seasonal-portfolio-card/", 
   server: {
     host: "::",
     port: 8080,
