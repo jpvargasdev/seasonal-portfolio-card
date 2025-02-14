@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(({ mode }) => ({
+  base: "/seasonal-portfolio-card/", // 👈 Set this to match your GitHub repo name
   server: {
     host: "::",
     port: 8080,
@@ -17,25 +18,25 @@ export default defineConfig(({ mode }) => ({
     target: "esnext",
     outDir: "dist",
     assetsDir: "assets",
-    sourcemap: mode === "development", // Source maps only in dev
-    minify: mode === "production" ? "esbuild" : false, // Minify only in production
-    cssCodeSplit: true, // Optimize CSS by splitting it into separate files
-    chunkSizeWarningLimit: 500, // Increase warning limit for chunk size
+    sourcemap: mode === "development",
+    minify: mode === "production" ? "esbuild" : false,
+    cssCodeSplit: true,
+    chunkSizeWarningLimit: 500,
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
-            return "vendor"; // Extract dependencies to a separate file
+            return "vendor";
           }
         },
       },
     },
   },
   esbuild: {
-    legalComments: "none", // Removes license comments from the output
-    drop: mode === "production" ? ["console", "debugger"] : [], // Remove console logs in production
+    legalComments: "none",
+    drop: mode === "production" ? ["console", "debugger"] : [],
   },
   define: {
-    "process.env.NODE_ENV": `"${mode}"`, // Define environment variable
+    "process.env.NODE_ENV": `"${mode}"`,
   },
 }));
