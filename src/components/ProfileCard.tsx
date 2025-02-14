@@ -80,16 +80,16 @@ const ProfileCard = () => {
         {/* Name */}
         <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">Juan Vargas</h1>
 
-        {/* Bio */}
+       {/* Bio */}
         <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
-          Hey, I'm a Mechatronic Engineer with a passion for building elegant, high-performance applications.  
+          <strong>Hey, I'm a Mechatronic Engineer with a passion for building elegant, high-performance applications.</strong>  
           <br /><br />
-          I have experience in <strong>backend development</strong>, <strong>cloud solutions</strong>, and <strong>infrastructure</strong>, but I also have extensive experience in <strong>mobile</strong> and <strong>web applications</strong>.  
-          I enjoy experimenting with new technologies, optimizing workflows, and pushing the boundaries of what’s possible with technology.  
+          I specialize in <strong>backend development</strong>, <strong>cloud solutions</strong>, and <strong>infrastructure</strong>, but I also have extensive experience in <strong>mobile</strong> and <strong>web applications</strong>.  
+          I enjoy <strong>experimenting with new technologies, optimizing workflows, and pushing the boundaries of what’s possible with technology</strong>.  
           <br /><br />
-          Outside of coding, I’m an FPV drone enthusiast, constantly designing, tweaking, and flying custom-built drones.  
-          I also love outdoor activities like climbing, running, and hiking. During winter, you'll find me skiing or doing indoor bouldering.  
-        </p>        
+          Outside of coding, I’m an <strong>FPV drone enthusiast</strong>, constantly <strong>designing, tweaking, and flying custom-built drones</strong>.  
+          I also love <strong>outdoor activities</strong> like climbing, running, and hiking. During winter, you’ll find me <strong>skiing or indoor bouldering</strong>.  
+        </p>      
         {/* Social Links */}
         <div className="flex space-x-6 pt-4">
           <TooltipProvider>
