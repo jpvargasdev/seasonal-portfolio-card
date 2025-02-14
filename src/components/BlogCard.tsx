@@ -1,5 +1,5 @@
 
-import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
@@ -11,20 +11,11 @@ interface BlogPost {
 }
 
 const BlogCard = ({ post }: { post: BlogPost }) => {
-  const { toast } = useToast();
-
-  const handleReadMore = () => {
-    toast({
-      title: "Coming Soon!",
-      description: "Full blog feature is under development",
-      duration: 2000,
-    });
-  };
-
   return (
-    <div 
+    <Link 
+      to="/blog/1" 
       className={cn(
-        "glass-card rounded-lg overflow-hidden transform transition-all duration-300",
+        "block glass-card rounded-lg overflow-hidden transform transition-all duration-300",
         "hover:scale-[1.02] hover:shadow-lg",
         "dark:bg-black/30 dark:border-white/10"
       )}
@@ -50,14 +41,13 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
           {post.excerpt}
         </p>
 
-        <button
-          onClick={handleReadMore}
+        <span
           className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
         >
           Read More <ArrowRight className="w-4 h-4" />
-        </button>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 };
 
